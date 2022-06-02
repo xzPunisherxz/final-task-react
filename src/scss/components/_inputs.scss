@@ -1,0 +1,83 @@
+.field {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.select {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    padding: 5px 10px;
+    box-shadow: inset 0 0 2px #b5b5b5;
+    border: 1px solid transparent;
+    color: #333333;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    appearance: none;
+    overflow: hidden;
+    background: url('../../../public/images/icons/select-arrow.svg') no-repeat center;
+    background-position: 98%;
+}
+
+.label {
+    font-family: 'Roboto', sans-serif;
+
+    color: #CCCCCC;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.input {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    padding: 5px 10px;
+    box-shadow: inset 0 0 2px #b5b5b5;
+    border: 1px solid transparent;
+    color: #333333;
+    border-radius: 5px;
+    resize: none;
+    width: 100%;
+    margin-bottom: 20px;
+
+    &::placeholder {
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        color: #CCCCCC;
+    }
+
+    &__comment {
+        max-width: 458px;
+        height: 76px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    &__modal {
+        margin-bottom: 0;
+
+        &-comment {
+            height: 76px;
+            margin-bottom: 0;
+        }
+    }
+
+    &__card {
+        &-description {
+            height: 608px;
+        }
+    }
+
+    &__modal {
+        height: 24px;
+        padding: 2.5px 10px;
+        margin-bottom: 20px;
+    }
+
+    &-filter {
+        height: 24px;
+        padding: 2.5px 10px;
+        margin: 0;
+        max-width: 527px;
+    }
+}
